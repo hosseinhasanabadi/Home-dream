@@ -4,19 +4,16 @@ import { assets } from "./../../assets/assets";
 function Navbar() {
   const [showMobil, setShowMobil] = useState(false);
 
-
-useEffect(()=>{
-if(setShowMobil){
-
-  document.body.style.overflow ="hidden"
-}else{
-  document.body.style.overflow ="auto"
-
-}return()=>{
-  document.body.style.overflow ="auto"
-
-}
-},[showMobil])
+  useEffect(() => {
+    if (showMobil) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [showMobil]);
 
   return (
     <section className="absolute z-10  top-0 left-0   w-full ">
@@ -34,7 +31,7 @@ if(setShowMobil){
             Home
           </a>
           <a
-            href=""
+            href="#About"
             className="cursor-pointer 
           hover:text-gray-400"
           >
@@ -86,7 +83,8 @@ if(setShowMobil){
           className="flex flex-col items-center gap-2 
         mt-5 px-5 text-lg font-medium"
         >
-          <a   onClick={() => setShowMobil(false)}
+          <a
+            onClick={() => setShowMobil(false)}
             href="#Header"
             className="px-4 py-2 rounded-full
           inline-block
@@ -94,7 +92,8 @@ if(setShowMobil){
           >
             Home
           </a>
-          <a  onClick={() => setShowMobil(false)}
+          <a
+            onClick={() => setShowMobil(false)}
             href="#About"
             className="px-4 py-2 rounded-full
           inline-block
@@ -102,8 +101,9 @@ if(setShowMobil){
           >
             About
           </a>
-    
-          <a  onClick={() => setShowMobil(false)}
+
+          <a
+            onClick={() => setShowMobil(false)}
             href="#Project"
             className="px-4 py-2 rounded-full
           inline-block

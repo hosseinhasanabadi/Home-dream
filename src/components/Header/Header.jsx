@@ -1,8 +1,9 @@
 import React from "react";
 import { assets } from "./../../assets/assets";
 import Navbar from "../Navbar/Navbar";
-import headerImage from "../../../public/header_img.png";
 function Header() {
+  const headerImage = "/header_img.png";
+ 
   return (
     <header
       className="min-h-screen mb-4 bg-center bg-cover 
@@ -20,7 +21,7 @@ function Header() {
         <a href="#Contact" className=" bg-blue-500 px-8 py-3 rounded "> Contact Us</a>
       </div>
         </div>
-      <Navbar />
+      {/* <Navbar /> */}
     </header>
   );
 }
