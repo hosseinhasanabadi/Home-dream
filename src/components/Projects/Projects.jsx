@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { assets, projectsData } from "../../assets/assets";
+import { motion } from "framer-motion";
 
 function Projects() {
   const [currentTndex, setCurrentIndex] = useState(0);
@@ -28,7 +29,12 @@ function Projects() {
   };
 
   return (
-    <section
+    <motion.section
+
+    initial={{ opacity: 0, x: -200 }}
+    transition={{ duration: 1.5 }}
+    whileInView={{ opacity: 1, x: 0 }}
+    viewport={{ oce: true }}
       className="contianer w-full mx-auto overflow-hidden 
    px-6  md:px-20 lg:px-32 my-20  "
       id="Projects"
@@ -98,7 +104,7 @@ function Projects() {
           ))}
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
 
