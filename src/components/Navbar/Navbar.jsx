@@ -38,7 +38,7 @@ function Navbar() {
             About
           </a>
           <a
-            href=""
+            href="#Projects"
             className="cursor-pointer 
           hover:text-gray-400"
           >
@@ -104,7 +104,7 @@ function Navbar() {
 
           <a
             onClick={() => setShowMobil(false)}
-            href="#Project"
+            href="#Projects"
             className="px-4 py-2 rounded-full
           inline-block
           "
