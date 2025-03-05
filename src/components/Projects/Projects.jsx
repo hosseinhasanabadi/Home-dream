@@ -90,7 +90,7 @@ function Projects() {
                   </h2>
                   <p className="text-gray-500 text-sm">
                     {" "}
-                    {project.price} <span>{project.location}</span>
+                    {project.price} <span className="px-1">|</span> <span>{project.location}</span>
                   </p>
                 </div>
               </div>

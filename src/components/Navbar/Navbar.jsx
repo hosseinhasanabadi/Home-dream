@@ -45,11 +45,11 @@ function Navbar() {
             Projects
           </a>
           <a
-            href=""
+            href="#Testimonalis"
             className="cursor-pointer 
           hover:text-gray-400"
           >
-            Testim
+            Testimonalis
           </a>
         </ul>
         <button
